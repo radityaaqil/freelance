@@ -11,7 +11,7 @@ export default function Home() {
         <title>AGAS SOLUTION</title>
       </Head>
       <NavigationBar companyIcon={<FaApple />} />
-      <div className="mt-8">
+      <div className="mt-8 md:mt-20">
         <Carousel />
       </div>
       <Footer />

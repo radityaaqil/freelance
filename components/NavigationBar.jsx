@@ -9,17 +9,20 @@ import {
   DrawerCloseButton,
   useDisclosure,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 const NavigationBar = ({ companyIcon }) => {
   //Drawer NavBar
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div className="py-6 px-8 flex justify-between bg-yellow-300">
+    <div className="py-8 px-12 flex justify-between bg-yellow-300">
       <div className="text-5xl hover:cursor-pointer" onClick={onOpen}>
         <HiBars3 />
       </div>
-      <div className="text-5xl">{companyIcon}</div>
+      <Link href="/">
+        <div className="text-5xl">{companyIcon}</div>
+      </Link>
 
       {/* Drawer */}
       <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
@@ -29,8 +32,10 @@ const NavigationBar = ({ companyIcon }) => {
             <DrawerCloseButton />
           </DrawerHeader>
 
-          <DrawerBody>
-            <div>About Us</div>
+          <DrawerBody className="font-ubuntu">
+            <Link href="/aboutus">
+              <div>About Us</div>
+            </Link>
             <div>What We Do</div>
             <div>Career</div>
             <div>Contact Us</div>

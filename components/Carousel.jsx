@@ -42,7 +42,13 @@ const Carousel = () => {
   return (
     <Slider {...settings} className="pb-10">
       <div className="h-[60vh] bg-red-400">
-        <h3>CONTENT 1</h3>
+        <div className="flex justify-center">
+          <div className="text-center text-6xl md:text-8xl font-bold mt-28 md:mt-36 font-ubuntu">
+            <h3>BUILD</h3>
+            <h3>CONNECT</h3>
+            <h3>GROW</h3>
+          </div>
+        </div>
       </div>
       <div className="h-[60vh] bg-green-400">
         <h3>CONTENT 2</h3>
