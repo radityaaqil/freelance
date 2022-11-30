@@ -34,11 +34,13 @@ const NavigationBar = ({ companyIcon }) => {
 
           <DrawerBody className="font-ubuntu">
             <Link href="/aboutus">
-              <div>About Us</div>
+              <div onClick={onClose}>About Us</div>
             </Link>
             <div>What We Do</div>
             <div>Career</div>
-            <div>Contact Us</div>
+            <Link href="/contactus">
+              <div onClick={onClose}>Contact Us</div>
+            </Link>
           </DrawerBody>
 
           <DrawerFooter></DrawerFooter>
