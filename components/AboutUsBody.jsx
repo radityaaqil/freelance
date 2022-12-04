@@ -1,6 +1,6 @@
 const AboutUsBody = () => {
   return (
-    <div className="mx-12 md:mx-28 lg:mx-44 mt-8 font-ubuntu">
+    <div className="mx-12 md:mx-28 lg:mx-44 mt-8 font-ubuntu text-[#3c0c3e]/80">
       <div className="text-2xl font-bold lg:hidden">About FEAT</div>
       <div className="mt-5 text-justify lg:hidden">
         FEAT is a digital agency that leverages the power of community. We

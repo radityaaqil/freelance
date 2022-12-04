@@ -47,14 +47,16 @@ const ContactUsBody = () => {
   });
 
   return (
-    <div className="font-ubuntu md:px-28 lg:px-44">
-      <div className="mt-4 px-12 text-4xl font-bold">Contact Us</div>
-      <div className="mt-4 bg-green-200 w-full px-12 rounded-md md:pb-16">
+    <div className="font-ubuntu text-white md:px-28 lg:px-44">
+      <div className="px-12 text-4xl font-bold text-[#3c0c3e]/90">
+        Contact Us
+      </div>
+      <div className="mt-4 bg-[#3c0c3e]/90 w-full px-12 rounded-md md:pb-10">
         <form onSubmit={formik.handleSubmit}>
-          <div className="md:hidden pt-2">
+          <div className="md:hidden pt-6">
             <div>Name</div>
             <input
-              className="w-full rounded-md outline-none focus:ring-1 focus:ring-[#731873] px-2"
+              className="w-full rounded-md outline-none focus:ring-2 focus:ring-[#3c0c3e] px-2 text-[#3c0c3e]/90"
               name="name"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
@@ -67,7 +69,7 @@ const ContactUsBody = () => {
           <div className="mt-4 md:hidden">
             <div>Email</div>
             <input
-              className="w-full rounded-md outline-none focus:ring-1 focus:ring-[#731873] px-2"
+              className="w-full rounded-md outline-none focus:ring-2 focus:ring-[#3c0c3e] px-2 text-[#3c0c3e]/90"
               name="email"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
@@ -80,7 +82,7 @@ const ContactUsBody = () => {
           <div className="mt-4 md:hidden">
             <div>Brief</div>
             <textarea
-              className="w-full rounded-md outline-none h-32 resize-none focus:ring-1 focus:ring-[#731873] px-2"
+              className="w-full rounded-md outline-none h-32 resize-none focus:ring-2 focus:ring-[#3c0c3e] px-2 text-[#3c0c3e]/90"
               name="brief"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
@@ -92,7 +94,7 @@ const ContactUsBody = () => {
           </div>
           <div className="flex justify-end md:hidden">
             <button
-              className="mt-6 px-4 py-2 bg-red-500 rounded-md"
+              className="mt-6 px-4 py-2 bg-white rounded-md text-[#3c0c3e] font-bold hover:bg-[#3c0c3e] hover:text-white duration-700 hover:ring-2 hover:ring-white"
               disabled={disabled}
               type="submit"
             >
@@ -115,13 +117,13 @@ const ContactUsBody = () => {
 
           {/* Large Screen */}
           <div className=" hidden md:flex">
-            <div className="w-3/5">
+            <div className="w-3/5 pt-6">
               <div>
                 <div className="md:flex gap-x-3 justify-between mt-2">
                   <div className="w-1/2">
                     <div>Name</div>
                     <input
-                      className="w-full rounded-md outline-none focus:ring-1 focus:ring-[#731873] px-2"
+                      className="w-full rounded-md outline-none focus:ring-2 focus:ring-[#3c0c3e] px-2"
                       name="name"
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
@@ -136,7 +138,7 @@ const ContactUsBody = () => {
                   <div className="w-1/2">
                     <div>Email</div>
                     <input
-                      className="w-full rounded-md outline-none focus:ring-1 focus:ring-[#731873] px-2"
+                      className="w-full rounded-md outline-none focus:ring-2 focus:ring-[#3c0c3e] px-2"
                       name="email"
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
@@ -153,7 +155,7 @@ const ContactUsBody = () => {
               <div className="mt-4">
                 <div>Brief</div>
                 <textarea
-                  className="w-full rounded-md outline-none h-32 resize-none focus:ring-1 focus:ring-[#731873] px-2"
+                  className="w-full rounded-md outline-none h-32 resize-none focus:ring-2 focus:ring-[#3c0c3e] px-2"
                   name="brief"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
@@ -167,7 +169,7 @@ const ContactUsBody = () => {
               </div>
               <div className="flex justify-end">
                 <button
-                  className="mt-6 px-4 py-2 bg-red-500 rounded-md"
+                  className="mt-6 px-4 py-2 bg-white rounded-md text-[#3c0c3e] font-bold hover:bg-[#3c0c3e] hover:text-white duration-700 hover:ring-2 hover:ring-white"
                   disabled={disabled}
                   type="submit"
                 >
@@ -176,7 +178,7 @@ const ContactUsBody = () => {
               </div>
             </div>
             <div className="w-2/5 ml-8">
-              <div className="mt-4 text-xl lg:text-3xl font-bold">
+              <div className="mt-6 text-xl lg:text-3xl font-bold">
                 Let us be your digital partner
               </div>
               <div className="mt-3 text-lg lg:text-2xl font-bold">

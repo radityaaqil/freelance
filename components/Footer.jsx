@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div className="fixed bottom-0 p-2 lg:p-4 bg-yellow-500 w-full flex justify-center text-white font-bold tracking-wider font-ubuntu">
-      Agas Solution 420
+    <div className="border-t-2 border-white fixed bottom-0 p-2 lg:p-4 bg-[#3c0c3e] w-full flex justify-center text-white font-bold tracking-wider font-ubuntu">
+      FEAT All Rights Reserved
     </div>
   );
 };

@@ -7,6 +7,7 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
+  Box,
   useDisclosure,
 } from "@chakra-ui/react";
 import Link from "next/link";
@@ -16,30 +17,76 @@ const NavigationBar = ({ companyIcon }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div className="py-8 px-12 flex justify-between bg-yellow-300">
-      <div className="text-5xl hover:cursor-pointer" onClick={onOpen}>
+    <div className="py-4 px-12 flex items-center justify-between">
+      <div className="text-4xl hover:cursor-pointer" onClick={onOpen}>
         <HiBars3 />
       </div>
       <Link href="/">
-        <div className="text-5xl">{companyIcon}</div>
+        <div>{companyIcon}</div>
       </Link>
 
       {/* Drawer */}
-      <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
+      <Drawer
+        closeOnEsc={true}
+        isOpen={isOpen}
+        placement="left"
+        onClose={onClose}
+      >
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent bgGradient="linear(to-br, #ffffff 10%, #3c0c3e 90%)">
           <DrawerHeader>
-            <DrawerCloseButton />
+            <DrawerCloseButton
+              size={"lg"}
+              mr={3}
+              mt={3}
+              _focusVisible={false}
+              // backgroundColor={"transparent"}
+              borderRadius="full"
+              transitionDuration="500ms"
+            />
           </DrawerHeader>
 
           <DrawerBody className="font-ubuntu">
             <Link href="/aboutus">
-              <div onClick={onClose}>About Us</div>
+              <Box
+                fontSize="xl"
+                mt={10}
+                p={4}
+                onClick={onClose}
+                _hover={{ fontSize: "2xl" }}
+                transitionDuration="500ms"
+              >
+                About Us
+              </Box>
             </Link>
-            <div>What We Do</div>
-            <div>Career</div>
+            <Box
+              fontSize="xl"
+              p={4}
+              onClick={onClose}
+              _hover={{ fontSize: "2xl" }}
+              transitionDuration="500ms"
+            >
+              What We Do
+            </Box>
+            <Box
+              fontSize="xl"
+              p={4}
+              onClick={onClose}
+              _hover={{ fontSize: "2xl" }}
+              transitionDuration="500ms"
+            >
+              Career
+            </Box>
             <Link href="/contactus">
-              <div onClick={onClose}>Contact Us</div>
+              <Box
+                fontSize="xl"
+                p={4}
+                onClick={onClose}
+                _hover={{ fontSize: "2xl" }}
+                transitionDuration="500ms"
+              >
+                Contact Us
+              </Box>
             </Link>
           </DrawerBody>
 
