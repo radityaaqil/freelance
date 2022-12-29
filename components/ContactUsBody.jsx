@@ -1,10 +1,14 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
+import { useToast } from "@chakra-ui/react";
 
 const ContactUsBody = () => {
   //Disabled Button
   const [disabled, setDisabled] = useState(false);
+
+  //Toast
+  const toast = useToast();
 
   //Input Border Color
   const [focusColor, setFocusColor] = useState(false);
@@ -38,6 +42,13 @@ const ContactUsBody = () => {
     onSubmit: async (values) => {
       try {
         setDisabled(true);
+        toast({
+          title: "Submitted!",
+          description: "We will reach out to you soon!",
+          status: "success",
+          duration: 9000,
+          isClosable: true,
+        });
       } catch (error) {
         console.log(error);
       } finally {

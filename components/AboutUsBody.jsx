@@ -42,7 +42,7 @@ const AboutUsBody = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center space-x-8 mt-8">
+      <div className="lg:flex justify-center space-x-8 mt-8 hidden">
         <div className="w-5/12 space-y-6">
           <div className="text-center text-xl p-4 border-2 border-[#3c0c3e] rounded-xl">
             Content Marketing
@@ -58,6 +58,25 @@ const AboutUsBody = () => {
           <div className="text-center text-xl p-4 border-2 border-[#3c0c3e] rounded-xl">
             Social Conditioning
           </div>
+        </div>
+      </div>
+      <div className="text-2xl font-bold lg:hidden pb-4 text-[#3c0c3e]/80">
+        THE NUMBERS
+      </div>
+      <div className="pb-10">
+        <div className="flex items-center">
+          <div className="w-[100px] h-[100px] bg-red-500 rounded-full">
+            <div>1</div>
+          </div>
+          <div className="">Successful Projects</div>
+        </div>
+        <div className="flex items-center">
+          <div className="w-[100px] h-[100px] bg-red-500 rounded-full">1</div>
+          <div className="">Satisfied Clients</div>
+        </div>
+        <div className="flex items-center">
+          <div className="w-[100px] h-[100px] bg-red-500 rounded-full">1</div>
+          <div className="">KOL Collaboration</div>
         </div>
       </div>
     </div>
