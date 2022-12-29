@@ -123,7 +123,7 @@ const ContactUsBody = () => {
                   <div className="w-1/2">
                     <div>Name</div>
                     <input
-                      className="w-full rounded-md outline-none focus:ring-2 focus:ring-[#3c0c3e] px-2"
+                      className="w-full text-[#3c0c3e] rounded-md outline-none focus:ring-2 focus:ring-[#3c0c3e] px-2"
                       name="name"
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
@@ -138,7 +138,7 @@ const ContactUsBody = () => {
                   <div className="w-1/2">
                     <div>Email</div>
                     <input
-                      className="w-full rounded-md outline-none focus:ring-2 focus:ring-[#3c0c3e] px-2"
+                      className="w-full text-[#3c0c3e] rounded-md outline-none focus:ring-2 focus:ring-[#3c0c3e] px-2"
                       name="email"
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
@@ -155,7 +155,7 @@ const ContactUsBody = () => {
               <div className="mt-4">
                 <div>Brief</div>
                 <textarea
-                  className="w-full rounded-md outline-none h-32 resize-none focus:ring-2 focus:ring-[#3c0c3e] px-2"
+                  className="w-full text-[#3c0c3e] rounded-md outline-none h-32 resize-none focus:ring-2 focus:ring-[#3c0c3e] px-2"
                   name="brief"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}

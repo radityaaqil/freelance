@@ -52,6 +52,7 @@ const NavigationBar = ({ companyIcon }) => {
                 fontSize="xl"
                 mt={10}
                 p={4}
+                h={14}
                 onClick={onClose}
                 _hover={{ fontSize: "2xl" }}
                 transitionDuration="500ms"
@@ -62,6 +63,7 @@ const NavigationBar = ({ companyIcon }) => {
             <Box
               fontSize="xl"
               p={4}
+              h={14}
               onClick={onClose}
               _hover={{ fontSize: "2xl" }}
               transitionDuration="500ms"
@@ -71,6 +73,7 @@ const NavigationBar = ({ companyIcon }) => {
             <Box
               fontSize="xl"
               p={4}
+              h={14}
               onClick={onClose}
               _hover={{ fontSize: "2xl" }}
               transitionDuration="500ms"
@@ -81,6 +84,7 @@ const NavigationBar = ({ companyIcon }) => {
               <Box
                 fontSize="xl"
                 p={4}
+                h={14}
                 onClick={onClose}
                 _hover={{ fontSize: "2xl" }}
                 transitionDuration="500ms"
