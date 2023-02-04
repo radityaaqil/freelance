@@ -2,6 +2,9 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
 import { useToast } from "@chakra-ui/react";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+
 
 const ContactUsBody = () => {
   //Disabled Button
@@ -124,6 +127,20 @@ const ContactUsBody = () => {
               T.B. Simatupang No. 18 Kebagusan - Pasar Minggu Jakarta Selatan,
               12550
             </div>
+            <div className="mt-5 space-y-3">
+              <div className="flex items-center space-x-4">
+                <div className="text-2xl"><FaWhatsapp/></div>
+                <div>0812134567890</div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <div className="text-2xl"><FaInstagram/></div>
+                <div>@featfeatskuy</div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <div className="text-2xl"><FiMail/></div>
+                <div>feat@feat.com</div>
+              </div>
+            </div>
           </div>
 
           {/* Large Screen */}
@@ -200,6 +217,20 @@ const ContactUsBody = () => {
                 Jl. T.B. Simatupang No. 18 Kebagusan - Pasar Minggu Jakarta
                 Selatan, 12550
               </div>
+              <div className="mt-5 space-y-3">
+              <div className="flex items-center space-x-4">
+                <div className="text-2xl"><FaWhatsapp/></div>
+                <div>0812134567890</div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <div className="text-2xl"><FaInstagram/></div>
+                <div>@featfeatskuy</div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <div className="text-2xl"><FiMail/></div>
+                <div>feat@feat.com</div>
+              </div>
+            </div>
             </div>
           </div>
         </form>

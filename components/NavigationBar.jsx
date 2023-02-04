@@ -60,16 +60,19 @@ const NavigationBar = ({ companyIcon }) => {
                 About Us
               </Box>
             </Link>
-            <Box
+            <Link href="/whatwedo">
+              <Box
               fontSize="xl"
               p={4}
               h={14}
               onClick={onClose}
               _hover={{ fontSize: "2xl" }}
               transitionDuration="500ms"
-            >
-              What We Do
-            </Box>
+              >
+                What We Do
+              </Box>
+            </Link>
+            
             <Box
               fontSize="xl"
               p={4}
