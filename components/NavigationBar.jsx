@@ -72,17 +72,19 @@ const NavigationBar = ({ companyIcon }) => {
                 What We Do
               </Box>
             </Link>
-            
-            <Box
-              fontSize="xl"
-              p={4}
-              h={14}
-              onClick={onClose}
-              _hover={{ fontSize: "2xl" }}
-              transitionDuration="500ms"
-            >
-              Career
-            </Box>
+            <Link href="/career">
+              <Box
+                fontSize="xl"
+                p={4}
+                h={14}
+                onClick={onClose}
+                _hover={{ fontSize: "2xl" }}
+                transitionDuration="500ms"
+                >
+                Career
+              </Box>
+            </Link>
+           
             <Link href="/contactus">
               <Box
                 fontSize="xl"

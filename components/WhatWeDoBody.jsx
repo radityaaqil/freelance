@@ -7,7 +7,7 @@ const WhatWeDoBody = () => {
             {/* Mobile Screen */}
             <div className="text-2xl font-bold lg:hidden">OUR</div>
             <div className="text-5xl font-bold lg:hidden">SERVICE</div>
-            <div className="mt-8 space-y-6 pb-10 lg:hidden">
+            <div className="mt-8 flex flex-col space-y-6 pb-10 lg:hidden">
                 <Link href="/whatwedo/content-marketing">
                     <div className="flex items-center border-b-2 border-dashed border-[#7a3d48] pb-3 hover:cursor-pointer">
                         <img className="w-[55px]" src="./image 32.svg" alt="Content Marketing"/>
@@ -21,7 +21,7 @@ const WhatWeDoBody = () => {
                     </div>
                 </Link>
                 <Link href="/whatwedo/community-management">
-                    <div className="flex items-center  border-b-2 border-dashed border-[#7a3d48] pb-3 hover:cursor-pointer">
+                    <div className="flex items-center border-b-2 border-dashed border-[#7a3d48] pb-3 hover:cursor-pointer">
                         <img className="w-[55px]" src="./image 33.svg" alt="Community Management"/>
                         <div className="ml-2 w-full">
                             <div className="text-lg font-bold text-[#7a3d48]">Community Management</div>
@@ -33,7 +33,7 @@ const WhatWeDoBody = () => {
                     </div>
                 </Link>
                 <Link href="/whatwedo/kol-marketing">
-                    <div className="flex items-center  border-b-2 border-dashed border-[#7a3d48] pb-3 hover:cursor-pointer">
+                    <div className="flex items-center border-b-2 border-dashed border-[#7a3d48] pb-3 hover:cursor-pointer">
                         <img className="w-[55px]" src="./image 34.svg" alt="KOL Marketing"/>
                         <div className="ml-2 w-full">
                             <div className="text-lg font-bold text-[#7a3d48]">KOL Marketing</div>
@@ -45,7 +45,7 @@ const WhatWeDoBody = () => {
                     </div>
                 </Link>
                 <Link href="/whatwedo/social-conditioning">
-                    <div className="flex items-center  border-b-2 border-dashed border-[#7a3d48] pb-3 hover:cursor-pointer">
+                    <div className="flex items-center border-b-2 border-dashed border-[#7a3d48] pb-3 hover:cursor-pointer">
                         <img className="w-[55px]" src="./image 35.svg" alt="Social Conditioning"/>
                         <div className="ml-2 w-full">
                             <div className="text-lg font-bold text-[#7a3d48]">Social Conditioning</div>
@@ -64,7 +64,7 @@ const WhatWeDoBody = () => {
                 <div className="w-full">
                     <div className="text-2xl font-bold">OUR</div>
                     <div className="text-5xl font-bold">SERVICE</div>
-                    <div className="mt-8 space-y-6 pb-10">
+                    <div className="mt-8 pb-10 flex flex-col space-y-6">
                         <Link href="/whatwedo/content-marketing">
                             <div className="flex items-center border-b-2 border-dashed border-[#7a3d48] pb-3 hover:cursor-pointer">
                                 <img className="w-[55px]" src="./image 32.svg" alt="Content Marketing"/>
