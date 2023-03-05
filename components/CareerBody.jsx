@@ -8,7 +8,7 @@ import ModalCareer from './ModalCareer';
 const CareerBody = () => {
     const { isOpen, onOpen, onClose } = useDisclosure() 
 
-    const CareerData = [
+    let CareerData = [
         {
             JobTitle: "Community Activation Officer",
             JobSummary: "Community Activation",
