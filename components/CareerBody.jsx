@@ -26,6 +26,12 @@ const CareerBody = () => {
             JobSummary: "Backend Engineer",
             JobType: "Fulltime",
             JobLocation: "Pekanbaru"
+        },
+        {
+            JobTitle: "Account Manager",
+            JobSummary: "Account Manager",
+            JobType: "Fulltime",
+            JobLocation: "Remote"
         }
     ]
 
