@@ -62,10 +62,9 @@ const CareerBody = () => {
                 <div>
                     <Stack spacing={4}>
                         <InputGroup>
-                            <InputLeftElement
-                            pointerEvents='none'
-                            children={<BiSearch className='text-slate-600' />}
-                            />
+                            <InputLeftElement>
+                                <BiSearch className='text-slate-600' />    
+                            </InputLeftElement>
                             <Input type='search' value={search} onChange={e => setSearch(e.target.value)} placeholder='Search Article'/>
                         </InputGroup>
                     </Stack>
